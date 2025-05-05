@@ -44,10 +44,11 @@ Implementar un analizador que procese expresiones con operaciones básicas (+, -
 ### ✅ Ejemplo 1: Expresión Aritmética
 
 **Entrada:**
-
-```text
-3 + 4 * (2 - 1)
-Salida:
+ ```text 
+   3 + 4 * (2 - 1)
+ ```
+**Salida:**
+ ```text
 Tokens:
 LexToken(NUMBER,3,1,0)
 LexToken(PLUS,'+',1,2)
@@ -61,19 +62,18 @@ LexToken(RPAREN,')',1,14)
 
 Resultado del parser:
 Resultado: 7
+ ```
 
-✅ Ejemplo 2: Uso de palabra clave if
-Entrada:
+**✅ Ejemplo 2: Uso de palabra clave if
+Entrada:**
 
-text
-Copiar
-Editar
+ ```text
+
 if 10 / 2
-Salida:
 
-text
-Copiar
-Editar
+ ```
+**Salida**
+ ```text
 Tokens:
 LexToken(IF,'if',1,0)
 LexToken(NUMBER,10,1,3)
@@ -83,18 +83,16 @@ LexToken(NUMBER,2,1,8)
 Resultado del parser:
 Encontrado IF con expresión: 5.0
 Resultado: 5.0
-✅ Ejemplo 3: Error de Sintaxis
-Entrada:
+ ```
+**✅ Ejemplo 3: Error de Sintaxis
+Entrada:**
 
-text
-Copiar
-Editar
+ ```text
 3 + * 4
-Salida:
+ ```
+**Salida:**
 
-text
-Copiar
-Editar
+ ```text
 Tokens:
 LexToken(NUMBER,3,1,0)
 LexToken(PLUS,'+',1,2)
